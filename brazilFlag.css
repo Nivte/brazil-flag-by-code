@@ -1,6 +1,6 @@
 h1 {
-  margin-inline: 30%;
   color: darkblue;
+  margin-inline-start: 30%;
 }
 .box {
   background: linear-gradient(to top right, yellow 50%, transparent 0%) top
@@ -13,7 +13,7 @@ h1 {
   width: 520px; /* 2*sin(120/2)*150 = 260 */
   height: 300px; /* 2*sin(60/2)*150  = 150 OR 2*cos(120/2)*150  = 150*/
   margin-block: 10%;
-  margin-inline: 30%;
+  margin-inline-start: 30%;
 }
 .circle {
   background-color: darkblue;
