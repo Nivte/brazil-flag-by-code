@@ -1,7 +1,13 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 h1 {
   color: darkblue;
-  margin-inline-start: 35%;
 }
+
 .box {
   background: linear-gradient(to top right, yellow 50%, transparent 0%) top
       right,
@@ -12,8 +18,7 @@ h1 {
   background-repeat: no-repeat;
   width: 520px; /* 2*sin(120/2)*150 = 260 */
   height: 300px; /* 2*sin(60/2)*150  = 150 OR 2*cos(120/2)*150  = 150*/
-  margin-block: 10%;
-  margin-inline-start: 30%;
+
   background-color: green;
 }
 .circle {
@@ -25,6 +30,7 @@ h1 {
   margin-inline: 30.5%;
   margin-block-start: 10%;
 }
+
 .text {
   font-size: 76%;
   height: 7%;
@@ -36,4 +42,32 @@ h1 {
   text-transform: uppercase;
   letter-spacing: 4px;
   transform: rotate(22deg); /* Equal to rotateZ(45deg) */
+}
+
+.ball {
+  height: 50px;
+  width: 50px;
+  margin-top: 200px;
+  margin-inline-end: 1.5px;
+}
+.ball:active {
+  transition: all 2s;
+  height: 210px;
+  width: 210px;
+  transform: translate(-1%, -216%) rotate(-1000deg);
+}
+nav {
+  margin-inline-end: 300px;
+  font-weight: 600;
+  text-transform: capitalize;
+  position: fixed;
+}
+.kick {
+  margin-inline-end: 300px;
+  font-weight: 600;
+  text-transform: capitalize;
+  position: fixed;
+  top: 600px;
+  height: 50px;
+  width: 120px;
 }
